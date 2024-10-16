@@ -377,11 +377,11 @@ if __name__=="__main__":
         config_instance = LLMEngineOrchestrator()
         llm_instance = config_instance.get_llm_engine(data="",llm_class="openai",model_name="gpt-4o-mini",temperature=0.1)
         #assertTrue(isinstance(llm_instance, OpenAIEngine))
-        with open("/home/venky/BCQA_final/DEXTER/wqa_splade_docs.json") as f:
+        with open("data/intermediate_outputs/wqa_splade_docs.json") as f:
                 evidence = json.load(f)
-        with open("wqa_splade.json","r") as f:
+        with open("data/intermediate_outputs/wqa_splade.json","r") as f:
             response = json.load(f)
-        with open("gar_graph.json", "r") as f:
+        with open("data/intermediate_outputs/gar_graph.json", "r") as f:
             knn_neighbours = json.load(f)
         question_df = {"questions":[],"answers":[], "reasoning_path":[],"meta_reasoner":[]}
 
@@ -393,7 +393,7 @@ if __name__=="__main__":
         intermediate = "\nIntermediate Answer:"
         ids = []
         responses_final = []
-        with open("/home/venky/BCQA_final/DEXTER/GARAGEAC_wqa_semantic_unc_rerank_feedback_without_consistent_without_sc.json","r") as f:
+        with open("data/sunar_searchain_saved_evidences.json","r") as f:
             predictions = json.load(f)
         for row in raw_data:
                 response_query = {}
