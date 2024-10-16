@@ -11,15 +11,15 @@ optional_packages = {
 }
 
 setup(
-    name="dexter-cqa",
+    name="sunar",
     version="1.0.9",
-    author="Venktesh V, Deepali Prabhu",
-    author_email="venkyviswa12@gmail.com",
-    description="A Benchmark for Complex Heterogeneous Question answering",
+    author="Anonymous",
+    author_email="anonymo@gmail.com",
+    description="SUNAR",
     long_description=readme,
     long_description_content_type="text/markdown",
     license="Apache License 2.0",
-    url="https://github.com/VenkteshV/BCQA",
+    url="",
     download_url="",
     packages=find_packages(),
     python_requires='>=3.8',
