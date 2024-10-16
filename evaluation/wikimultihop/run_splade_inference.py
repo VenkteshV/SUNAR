@@ -12,17 +12,14 @@ if __name__ == "__main__":
                                      document_encoder_path="naver/splade_v2_max"
                                      ,batch_size=4)
     # config = config_instance.get_all_params()
-    corpus_path = "/raid_data-lv/venktesh/BCQA/wiki_musique_corpus.json"
+    corpus_path = "2WikimultihopQA/wiki_musique_corpus.json"
 
     loader = RetrieverDataset("wikimultihopqa","wiki-musiqueqa-corpus","evaluation/config.ini",Split.TRAIN)
     queries, qrels, corpus = loader.qrels()
     print("queries",len(queries),len(qrels),len(corpus),queries[0])
     tasb_search = SPLADE(config_instance)
 
-    ## wikimultihop
-
-    # with open("/raid_data-lv/venktesh/BCQA/wiki_musique_corpus.json") as f:
-    #     corpus = json.load(f)
+  
 
     similarity_measure = CosScore()
     response = tasb_search.retrieve(corpus,queries,1000,similarity_measure,chunk=True,chunksize=100000,data_name="wikimultihop_train")
