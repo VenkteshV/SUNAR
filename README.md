@@ -43,7 +43,7 @@ python evaluation/wikimultihop/llms/run_searchain_sunar.py
 ```
 Note the above script runs using evidences saved froma  run of SUNAR algorithm and does inference to enable easy reproduction of the results in paper
 
-If interested in running SUNAR end-end run 
+If interested in running SUNAR end-end for reproducing SUNAR numbers in Table 1 run 
 
 ```
 python evaluation/wikimultihop/llms/run_sunar.py
