@@ -3,6 +3,8 @@
 <p align="center">
   <img src="Screenshot 2024-10-17 at 6.06.46 PM.png" />
 </p>
+
+
 # Setup
 1) Clone the repo <br />
 2) Create a conda environment conda create -n SUNAR python=3.10.3  <br />
