@@ -8,7 +8,7 @@
 # Download data
 curl https://gitlab.tudelft.nl/anonymous_arr/bcqa_data/-/raw/main/2wikimultihopQA.zip -o 2wikimultihopQA.zip
 
-To download the <b> Document graph</b> for the corpus emplyoed for MusiqueQa and WikimultihopQA use this link https://drive.google.com/drive/folders/1zyWtCyhQzxaMQpM6uXT5oqvtqFMg7nYl?usp=sharing 
+To download the <b> Document graph</b> of the corpus employed in neighborhood adaptive retrieval for MusiqueQa and WikimultihopQA use this link https://drive.google.com/drive/folders/1zyWtCyhQzxaMQpM6uXT5oqvtqFMg7nYl?usp=sharing 
 
 
 # Config for running experiments
