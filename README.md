@@ -14,6 +14,8 @@ To download the <b> Document graph</b> of the corpus employed in neighborhood ad
 # Config for running experiments
 In evaluation/config.ini configure the corresponding paths to downloaded files
 configure project root directory to PYTHONPATH variable
+
+Additionally set the following environment variables in the terminal
 ```
 export PYTHONPATH=/path
 
