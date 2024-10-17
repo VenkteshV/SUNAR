@@ -16,6 +16,10 @@ curl https://gitlab.tudelft.nl/anonymous_arr/bcqa_data/-/raw/main/2wikimultihopQ
 
 To download the <b> Document graph</b> of the corpus employed in neighborhood adaptive retrieval for MusiqueQa and WikimultihopQA use this link https://drive.google.com/drive/folders/1zyWtCyhQzxaMQpM6uXT5oqvtqFMg7nYl?usp=sharing 
 
+If you want to create your own corpus graph run 
+```
+python evaluation/form_corpus_graph.py
+```
 
 Download wiki_musique_corpus.json from https://drive.google.com/drive/folders/1zyWtCyhQzxaMQpM6uXT5oqvtqFMg7nYl?usp=drive_link and save it in data folder
 
