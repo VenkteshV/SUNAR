@@ -17,6 +17,11 @@ curl https://gitlab.tudelft.nl/anonymous_arr/bcqa_data/-/raw/main/2wikimultihopQ
 To download the <b> Document graph</b> of the corpus employed in neighborhood adaptive retrieval for MusiqueQa and WikimultihopQA use this link https://drive.google.com/drive/folders/1zyWtCyhQzxaMQpM6uXT5oqvtqFMg7nYl?usp=sharing 
 
 
+Download wiki_musique_corpus.json from https://drive.google.com/drive/folders/1zyWtCyhQzxaMQpM6uXT5oqvtqFMg7nYl?usp=drive_link and save it in data folder
+
+
+If you do not want to run splade download wqa_splade_docs.json from https://drive.google.com/drive/folders/1zyWtCyhQzxaMQpM6uXT5oqvtqFMg7nYl?usp=drive_link  and drop it inside data/intermediate_outputs/ 
+
 # Config for running experiments
 In evaluation/config.ini configure the corresponding paths to downloaded files
 configure project root directory to PYTHONPATH variable
