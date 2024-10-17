@@ -416,15 +416,15 @@ if __name__=="__main__":
                 print("docs_this_round", index_pred,len(docs_this_round))
                 print("index_pred",index_pred)
 
-                for doc in docs_this_round:
-                    print("rerank*********")
-                    final_score = cross_enc.predict([[row.question.text(), doc]])[0]
-                    final_docs.append(doc)
-                    final_scores.append(final_score)
-                re_ranked_list_final =  sorted(zip(list(final_docs),list(final_scores)), key=lambda x: x[1],reverse=True)[:10]
-                docs_final = [document for document,score in re_ranked_list_final]
-                print("docs_final",len(docs_final), docs_final[0])
-                top_final = "\n".join(docs_final)
+                # for doc in docs_this_round:
+                #     print("rerank*********")
+                #     final_score = cross_enc.predict([[row.question.text(), doc]])[0]
+                #     final_docs.append(doc)
+                #     final_scores.append(final_score)
+                # re_ranked_list_final =  sorted(zip(list(final_docs),list(final_scores)), key=lambda x: x[1],reverse=True)[:10]
+                # docs_final = [document for document,score in re_ranked_list_final]
+                # print("docs_final",len(docs_final), docs_final[0])
+                top_final = "\n".join(docs_this_round)
                 print(prediction_current["sequential_reasoner_path"].split("Question")[-1].split("[Final Answer]")[0])
                 #top_final = "\n".join(list(set(docs_this_round)))
                 system_prompt_1 = """Solve a question answering task with interleaving Thought, Action, Observation steps. Thought can reason about the current situation, and Action can be three types: 
